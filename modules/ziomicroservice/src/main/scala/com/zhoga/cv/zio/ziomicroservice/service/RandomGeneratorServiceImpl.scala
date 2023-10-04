@@ -10,4 +10,4 @@ object RandomGeneratorServiceImpl:
   val MAXIMUM_FACTOR = 10
   val MINIMUM_FACTOR = 1
 
-  def layer: ZLayer[Any, Nothing, RandomGeneratorServiceImpl] = ZLayer.succeed(RandomGeneratorServiceImpl())
+  val layer: ZLayer[Any, Nothing, RandomGeneratorServiceImpl] = ZLayer.succeed(RandomGeneratorServiceImpl())
